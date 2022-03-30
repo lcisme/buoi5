@@ -1,0 +1,42 @@
+package session5lab2;
+
+public class KhachHang {
+    String id,name,date;
+
+    int soluong;
+    int[] dinhmuc = {50,100,200};
+    int[] dinhmucgia = {1000,1200,1500,2000};
+
+    public int getSoluong() {
+        return soluong;
+    }
+    public void setSoluong(int soluong) {
+        this.soluong = soluong;
+    }
+    public String getId() {
+        return id;
+    }
+    public void setId(String id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getDate() {
+        return date;
+    }
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public void hienThi(){
+        System.out.println("\nThông tin hóa đơn");
+        System.out.println("Mã khách hàng "+id);
+        System.out.println("Họ tên "+name);
+        System.out.println("Ngày thu "+date);
+        System.out.println("Số lượng tiêu thụ(KW) "+soluong);
+    }
+}
